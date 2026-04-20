@@ -42,33 +42,3 @@ body{
   background-color:#ff9800;
   border-radius: 5px;
 }
-
-#container .celda5{
-  padding: 9px;
-  background-color:#ff3700;
-  border-radius: 5px;
-}
-
-#container .celda6{
-  padding: 9px;
-  background-color:#459800;
-  border-radius: 5px;
-}
-
-#container .celda7{
-  padding: 9px;
-  background-color:#ff98ff;
-  border-radius: 5px;
-}
-
-#container .celda8{
-  padding: 9px;
-  background-color:#023300;
-  border-radius: 5px;
-}
-
-#container .celda9{
-  padding: 9px;
-  background-color:#0f2255;
-  border-radius: 5px;
-}
