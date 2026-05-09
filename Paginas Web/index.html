@@ -2,41 +2,54 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>P1 HTML 2026 - Mi Top Guitarras</title>
     <link rel="stylesheet" href="../CSS/main.css">
 </head>
 <body>
-    <header>
-        <h1>Mi TOP guitarras favoritas</h1>
-    </header>
+    <div id="container">
+        <header>
+            <h1>Mi Top Guitarras</h1>
+        </header>
 
-    <nav>
-        <section>
-            <a href="flyingV.html">Ver historia de la Flying V</a>
-            <h2>Top 1: Flying V</h2>
-            <img src="../Imagenes/120179_1.jpg" alt="Gibson Flying V" width="200">
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="flyingV.html">Flying V</a>
+            <a href="GibsonExplorer.html">Explorer</a>
+            <a href="Stratocaster.html">Stratocaster</a>
+        </nav>
+
+        <section class="card-container">
+            <div class="card">
+                <img src="../Imagenes/120179_1.jpg" alt="Flying V" class="img-zoom">
+                <div class="card-content">
+                    <h3>Gibson Flying V</h3>
+                    <p>Un diseño futurista que rompió esquemas en 1958.</p>
+                    <a href="flyingV.html" class="btn">Leer más</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../Imagenes/gibson-80s-explorer-ebony-10166261.jpg" alt="Explorer" class="img-blur">
+                <div class="card-content">
+                    <h3>Gibson Explorer</h3>
+                    <p>La combinación perfecta de ángulos rectos.</p>
+                    <a href="GibsonExplorer.html" class="btn">Leer más</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../Imagenes/preview.jpg" alt="Stratocaster" class="img-grey">
+                <div class="card-content">
+                    <h3>Fender Stratocaster</h3>
+                    <p>La guitarra más versátil de la historia.</p>
+                    <a href="Stratocaster.html" class="btn">Leer más</a>
+                </div>
+            </div>
         </section>
 
-        <br>
-
-        <section>
-            <a href="GibsonExplorer.html">Ver historia de la Explorer</a>
-            <h2>Top 2: Explorer</h2>
-            <img src="../Imagenes/gibson-80s-explorer-ebony-10166261.jpg" alt="Gibson Explorer" width="200">
-        </section>
-
-        <br>
-
-        <section>
-            <a href="Stratocaster.html">Ver historia de la Stratocaster</a>
-            <h2>Top 3: Stratocaster</h2>
-            <img src="../Imagenes/preview.jpg" alt="Fender Stratocaster" width="200">
-        </section>
-    </nav>
-
-    <footer>
-        <p>Pie de página - Inicio</p>
-    </footer>
+        <footer>
+            <p>&copy; 2026 Expert Guitars - Calidad en cada nota</p>
+        </footer>
+    </div>
 </body>
 </html>
