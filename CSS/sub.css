@@ -9,9 +9,10 @@
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #f4f4f4;
-  color: #000000;
+  color: #333;
 }
 
+/* Contenedor principal de la subpágina */
 #container {
   display: flex;
   flex-direction: column;
@@ -20,7 +21,7 @@ body {
 
 header {
   background-color: #1a1a1a;
-  color: #000000;
+  color: #f1c40f;
   padding: 40px;
   text-align: center;
   text-transform: uppercase;
@@ -48,37 +49,10 @@ header {
   color: #1abc9c;
 }
 
-.card-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  padding: 50px 20px;
-}
-
-.card {
-  background: white;
-  width: 320px;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.card:hover {
-  transform: translateY(-15px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-}
-
-.card-content {
-  padding: 20px;
-  text-align: center;
-}
-
+/* El área donde vive la historia */
 main {
   flex: 1;
   display: flex;
-  justify-content: center; 
   align-items: center;
   justify-content: center;
   padding: 40px;
@@ -88,8 +62,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background: white;
-  width: 100%;           
-  max-width: 1100px;     
+  max-width: 1000px;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0,0,0,0.05);
@@ -99,57 +72,34 @@ main {
   padding: 50px;
 }
 
-.texto-historia h2 {
-  margin-bottom: 20px;
-  color: #2c3e50;
-}
-
+/* Ajuste para que la imagen no sea gigante */
 .imagen-historia {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
+  display: flex;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  max-height: 500px; 
-  object-fit: contain;
+.imagen-historia img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Esto hace que la imagen rellene el hueco sin deformarse */
   transition: 0.5s ease;
 }
 
-.img-zoom:hover { transform: scale(1.10); }
+/* Efectos de imagen */
+.img-zoom:hover { transform: scale(1.1); }
 .img-blur:hover { filter: blur(4px); }
 .img-grey:hover { filter: grayscale(100%); }
-
-.btn {
-  display: inline-block;
-  background-color: #e74c3c;
-  color: white;
-  padding: 12px 28px;
-  margin-top: 15px;
-  text-decoration: none;
-  border-radius: 50px;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #c0392b;
-  transform: scale(1.1);
-  box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
-}
 
 footer {
   background-color: #1a1a1a;
   color: #888;
   text-align: center;
   padding: 30px;
-  margin-top: auto;
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
   .historia-container {
     grid-template-columns: 1fr;
   }
+}body {
+    background-color: red !important;
+}
